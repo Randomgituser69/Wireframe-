@@ -83,19 +83,32 @@ textarea:not([rows]) {
   font-family: 'Proxima Nova Condensed', sans-serif;
 }
 body {
+  text-align: center;
   font-size: 0.938rem;
   margin: 0;
   padding: 0;
 }
 section, nav {
+  align-items: center;
   padding: 15px;
 }
 header {
+  padding: 20px;
   background-color: var(---dark-grayish-blue);
+}
+ul {
+  list-style-type: none;
+}
+@media screen and (min-width: 37.5rem) {
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 ul {
   display: flex;
   flex-direction: row;
   gap: 15px;
   list-style: none;
+}
 }
